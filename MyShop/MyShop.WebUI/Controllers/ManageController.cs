@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using MyShop.Core.Contracts;
+using MyShop.Core.Models;
 using MyShop.WebUI.Models;
 
 namespace MyShop.WebUI.Controllers
@@ -20,11 +22,11 @@ namespace MyShop.WebUI.Controllers
         {
         }
 
-        public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
-        {
-            UserManager = userManager;
-            SignInManager = signInManager;
-        }
+        //public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        //{
+        //    UserManager = userManager;
+        //    SignInManager = signInManager;
+        //}
 
         public ApplicationSignInManager SignInManager
         {
